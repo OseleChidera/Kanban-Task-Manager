@@ -1,0 +1,72 @@
+.edit-main{
+    position: absolute;
+        width: 100%;
+        top: 0;
+        left: 0;
+        height: 100%;
+        background-color: #0001127c;
+        z-index: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    /* background-color: brown; */
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --p: 1rem;
+    --mb: 0.7rem;
+}
+.edit-center{
+    position: relative;
+    width: 85%;
+    min-height: fit-content;
+    outline: 1px solid white;
+    padding: var(--p);
+    color: white !important;
+    background-color: #3e3f43;
+    border-radius: 10px;
+}
+.edit-center div{
+    margin-bottom: var(--mb);
+}
+.title-options{
+
+    width: 100%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.6rem;
+}
+
+.title-options p{
+    font-weight: 700;
+}
+.section2{
+    color: #828fa3;
+}
+h4{
+    text-transform: capitalize;
+    font-size: medium;
+    margin-bottom: var(--mb);
+}
+.section3 .subtask-input{
+    width: 100%;
+display: inline-flex;
+gap: 1rem;
+height: fit-content;
+padding: 0.8rem;
+background-color: #20212c;
+    border-radius: 5px;
+/* outline: 1px solid white; */
+}
+.subtask-input input{
+    width: 2rem;
+}
+.checkbox:checked+label {
+color: #828fa3;
+text-decoration-line: line-through;
+}

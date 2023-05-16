@@ -1,0 +1,143 @@
+.dialog {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    background-color: rgba(14, 6, 6, 0.792);
+    z-index: 1;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+}
+
+:root {
+    --mb: 0.7rem
+}
+
+.title {
+    color: white;
+    display: block;
+    margin-bottom: 0.5rem;
+    font-size: larger;
+    text-transform: capitalize;
+}
+
+.dialog h3 {
+    color: white;
+    text-transform: capitalize;
+    margin-bottom: var(--mb);
+}
+
+.dialog .form-add-board {
+    position: relative;
+    /* top: -6rem; */
+    width: 80vw;
+    min-height: fit-content;
+    /* outline: 1px solid white; */
+    padding: 1rem;
+    background-color: #2b2c37;
+    border-radius: 10px;
+}
+
+/* .form h2 {
+    color: white;
+    text-transform: capitalize;
+} */
+
+input {
+    width: 100%;
+    line-height: 2rem;
+    font-size: 16px;
+    text-indent: 1rem;
+    background-color: inherit;
+    border-radius: 5px;
+    border: 1px solid #ecedfa;
+    color: white;
+}
+
+input::placeholder {
+    text-indent: 1rem;
+}
+/* 
+.title-div input {}
+
+textarea {
+    min-height: 9rem;
+    line-height: 1.5rem;
+    padding: 1rem;
+    background-color: inherit;
+    border-radius: 5px;
+    font-size: 16px;
+    border: 1px solid #ecedfa;
+    color: white;
+} */
+
+.section {
+    margin-bottom: var(--mb);
+}
+
+/* .title-input,
+.desc-input {
+    width: 100%;
+
+} */
+
+.column-div {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.section .column {
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    /* outline: 1px solid white; */
+}
+
+.column input {
+    width: 90%;
+}
+
+.column-div button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    border-radius: 25px;
+    border: none;
+    background-color: white;
+    color: #635FC7;
+    text-transform: capitalize;
+
+}
+
+.inner-button {
+    display: flex;
+    align-items: center;
+    font-weight: 200;
+    font-size: 15px;
+    gap: 0.2rem;
+}
+
+.column button .add-board-text {
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: capitalize;
+}
+
+
+.create-board {
+    width: 100%;
+    font-size: 15px;
+    text-transform: capitalize;
+    padding: 15px;
+    border-radius: 25px;
+    border: none;
+    background-color: #635FC7;
+    color: white;
+}

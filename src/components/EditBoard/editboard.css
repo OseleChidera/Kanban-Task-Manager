@@ -1,0 +1,125 @@
+.dialog {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    background-color: rgba(14, 6, 6, 0.792);
+    z-index: 1;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+}
+
+:root {
+    --mb: 0.7rem
+}
+
+.title {
+    color: white;
+    display: block;
+    margin-bottom: 0.5rem;
+    /* font-size: larger; */
+    text-transform: capitalize;
+}
+
+.dialog h5 {
+    color: white;
+    text-transform: capitalize;
+    margin-bottom: var(--mb);
+}
+
+.dialog .form-add-Task {
+    position: relative;
+    /* top: -6rem; */
+    width: 80vw;
+    min-height: fit-content;
+    /* outline: 1px solid white; */
+    padding: 1rem;
+    background-color: #2b2c37;
+    border-radius: 10px;
+}
+
+.form h5 {
+    color: white;
+    text-transform: capitalize;
+}
+
+input {
+    line-height: 2rem;
+    font-size: 16px;
+    text-indent: 1rem;
+    background-color: inherit;
+    border-radius: 5px;
+    border: 1px solid #ecedfa;
+    color: white;
+}
+
+input::placeholder {
+    text-indent: 1rem;
+}
+
+
+.section {
+    margin-bottom: var(--mb);
+}
+
+.title-input,
+.desc-input {
+    width: 100%;
+
+}
+
+
+.sub-task {
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+    /* outline: 1px solid white; */
+}
+
+.sub-task input {
+    width: 90%;
+}
+
+.subtask-div button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    border-radius: 25px;
+    border: none;
+    background-color: white;
+    color: #635FC7;
+    text-transform: capitalize;
+
+}
+
+.inner-button {
+    display: flex;
+    align-items: center;
+    font-weight: 200;
+    font-size: 15px;
+    gap: 0.2rem;
+}
+
+.subtasks button .add-subtask-text {
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: capitalize;
+}
+
+
+
+.create-task {
+    width: 100%;
+    font-size: 15px;
+    text-transform: capitalize;
+    padding: 15px;
+    border-radius: 25px;
+    border: none;
+    background-color: #635FC7;
+    color: white;
+}

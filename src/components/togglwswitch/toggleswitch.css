@@ -1,0 +1,73 @@
+/* Style for the switch container */
+
+.toggle-div {
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 5px;
+    background-color: #a9a4ff6f;
+    position: relative;
+    align-self: flex-end;
+    bottom: 0px;
+    display: inline-flex;
+    justify-content: center;
+}
+
+.toggle-main {
+    display: inline-flex;
+    gap: 1rem;
+    align-items: center;
+}
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 25px;
+}
+
+/* Hide the default checkbox */
+.switch input {
+    display: none;
+}
+
+/* Style for the slider */
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #635fc7;
+    transition: .4s;
+    border-radius: 34px;
+}
+
+/* Style for the slider when checked */
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 20px;
+    width: 20px;
+    left: 4.5px;
+    bottom: 2.5px;
+    background-color: white;
+    transition: .4s;
+    border-radius: 50%;
+}
+
+/* Style for the slider when checked and in dark mode */
+.switch input:checked+.slider:before {
+    transform: translateX(31px);
+    background-color: #635fc7;
+}
+
+/* Style for the slider when unchecked and in light mode */
+.switch .slider:before {
+    transform: translateX(0);
+}
+
+/* Style for the slider when unchecked and in dark mode */
+.switch input:checked+.slider {
+    background-color: white;
+}
+
